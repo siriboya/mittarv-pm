@@ -7,7 +7,7 @@ every phase change per task.
 ## Tech Stack
 - **Frontend:** React (React Router, Axios)
 - **Backend:** Node.js + Express.js
-- **Database:** MongoDB (Mongoose)
+- **Database:** MongoDB Atlas (cloud-hosted), accessed via Mongoose
 - **Security:** API key header (`x-api-key`) required on all `/api/*` routes
 
 ## Features
@@ -44,7 +44,7 @@ cp .env.example .env
 # edit .env if needed (MONGO_URI, API_KEY)
 npm run dev        # or: npm start
 ```
-Make sure MongoDB is running locally (or set MONGO_URI to a MongoDB Atlas connection string).
+This project uses MongoDB Atlas (cloud-hosted) — no local MongoDB installation needed. Just set your own Atlas connection string in MONGO_URI.
 Backend runs on `http://localhost:5000`.
 
 ### 2. Frontend
